@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.glass {
+	@apply bg-opacity-60 dark:bg-opacity-60 backdrop-filter backdrop-blur-lg
+}
+html,
+body {
+	@apply h-full overflow-hidden;
+}
+
+.card {
+	@apply bg-white p-5 rounded-xl glass;
+	/* @apply bg-[conic-gradient(at_bottom_left,_var(--tw-gradient-stops))] from-primary-100 via-surface-400 to-blue-200; */
+}
+h1 {
+	@apply text-3xl m-2 text-center
+}
+
+.btn,
+.btn-icon {
+	@apply font-bold rounded-xl ;
+}
+.btn-filled-primary,
+.btn-filled-accent,
+.btn-filled-warning,
+.btn-filled-surface {
+	@apply text-white;
+}
